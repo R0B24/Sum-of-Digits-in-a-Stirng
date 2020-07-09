@@ -1,0 +1,13 @@
+def getSumOfDigitsInUserNumber(userNum):
+    SumOfDigitInUserNum = 0
+
+    for currentdigitasstring in userNum:
+        currentdigitasint = int(currentdigitasstring)
+        SumOfDigitInUserNum =  SumOfDigitInUserNum + currentdigitasint
+    return SumOfDigitInUserNum
+
+def main():
+    userNum = input("Enter a series of single digit number: ")
+    SumOfDigitInUserNum = getSumOfDigitsInUserNumber(userNum)
+    print("The sum of all the digit in",userNum,"is", SumOfDigitInUserNum)
+main()
